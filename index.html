@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Petite Lumière — Accueil</title>
+  <meta name="description" content="Petite Lumière — Restaurant & Pâtisserie française, Hôtel de Cameron, San Miguel." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --celeste:#CFEFF9;--bleu:#0B3D91;--doré:#F4C542;--bordeaux:#A1222B;--gris:#333;
+      --max:1100px;--radius:12px;
+    }
+    *{box-sizing:border-box}body{font-family:Montserrat,system-ui,Arial;color:var(--gris);margin:0;background:linear-gradient(180deg,#fff,#fbfdff);}
+    .wrap{max-width:var(--max);margin:0 auto;padding:16px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;position:sticky;top:0;background:rgba(255,255,255,0.6);backdrop-filter:blur(6px);z-index:12}
+    .brand{display:flex;gap:12px;align-items:center}.brand img{width:68px;height:68px;object-fit:contain;border-radius:10px;background:#fff;padding:6px}
+    nav ul{display:flex;gap:12px;list-style:none;margin:0;padding:0;align-items:center}
+    nav a{ text-decoration:none;color:var(--gris);font-weight:600}
+    .cta{background:var(--doré);padding:8px 12px;border-radius:999px;color:#111;font-weight:700}
+    .hero{margin-top:12px;border-radius:var(--radius);overflow:hidden;position:relative}
+    .hero img{width:100%;height:420px;object-fit:cover;display:block}
+    .hero-box{position:absolute;left:16px;bottom:20px;background:rgba(255,255,255,0.92);padding:12px;border-radius:10px;max-width:560px}
+    h1{font-family:Playfair Display,serif;margin:0;color:var(--bleu)}
+    p.lead{color:#555}
+    section{padding:20px 0;border-top:1px solid rgba(11,61,145,0.03)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .card{background:#fff;padding:12px;border-radius:12px;box-shadow:0 8px 20px rgba(11,61,145,0.04)}
+    .mini{display:flex;gap:10px;align-items:center}
+    .mini img{width:80px;height:64px;object-fit:cover;border-radius:8px}
+    footer{text-align:center;padding:18px 0;color:#777}
+    .langsel{border-radius:8px;padding:6px}
+    /* mobile */
+    @media(max-width:820px){.hero img{height:260px}.brand img{width:56px;height:56px}}
+  </style>
+</head>
+<body>
+  <header class="wrap" role="banner">
+    <div class="brand">
+      <img src="img/logo.jpeg" alt="Logo Petite Lumière">
+      <div>
+        <div style="font-weight:700;color:var(--bleu)">Petite Lumière</div>
+        <div style="font-size:13px;color:#666" data-key="header_sub">Cuisine & Pâtisserie Française — Hôtel de Cameron</div>
+      </div>
+    </div>
+
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html" data-key="nav_home">Accueil</a></li>
+        <li><a href="menu.html" data-key="nav_menu">Menu</a></li>
+        <li><a href="galerie.html" data-key="nav_gallery">Galerie</a></li>
+        <li><a href="emplois.html" data-key="nav_jobs">Emplois</a></li>
+        <li><a href="contact.html" data-key="nav_contact">Contact</a></li>
+        <li><a class="cta" href="menu.html" data-key="nav_reserve">Réserver</a></li>
+        <li><select id="lang" class="langsel" aria-label="Langue"><option value="fr">FR</option><option value="es">ES</option></select></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="wrap" id="main">
+    <section class="hero" aria-label="Hero">
+      <img src="img/ambiente.PNG" alt="Petite Lumière - ambiance chaleureuse">
+      <div class="hero-box">
+        <h1 data-key="tagline">Petite Lumière — un petit coin avec l'éclat de la France</h1>
+        <p class="lead" data-key="hero_paragraph">Restaurant et pâtisserie française intime, niché dans l'Hôtel de Cameron. Plats classiques, pâtisseries artisanales et service soigné.</p>
+        <div style="margin-top:8px">
+          <a class="cta" href="menu.html" data-key="btn_menu">Découvrir le Menu</a>
+          <a href="emplois.html" style="margin-left:8px;text-decoration:none;padding:8px 12px;border-radius:8px;border:1px solid #eee" data-key="btn_jobs">Postuler</a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="about">
+      <h2 id="about" data-key="about_title">Notre histoire</h2>
+      <p data-key="about_lead">Petite Lumière a été créée pour offrir un coin de France à San Miguel. Notre approche allie techniques classiques françaises et produits locaux de qualité.</p>
+      <div class="grid" style="margin-top:12px">
+        <div class="card">
+          <h3 data-key="mission_label">Mission</h3>
+          <p data-key="mission_text">Offrir des plats et desserts français authentiques, préparés avec passion et respect des produits locaux.</p>
+        </div>
+        <div class="card">
+          <h3 data-key="values_label">Valeurs</h3>
+          <ul>
+            <li>Qualité</li><li>Hospitalité</li><li>Authenticité</li><li>Respect des traditions</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Notre lien avec l'Hôtel</h3>
+          <p>Nous opérons au sein de l'Hôtel de Cameron et collaborons avec leur équipe pour offrir une expérience complète (petit-déjeuner, brunch, dîners privés).</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="preview">
+      <h2 id="preview" data-key="preview_title">Aperçu du Menu</h2>
+      <div class="grid">
+        <div class="card mini">
+          <img src="img/postre.JPG" alt="">
+          <div>
+            <strong data-key="preview1_title">Mille-feuille</strong>
+            <div style="font-size:13px;color:#666" data-key="preview1_desc">Feuilletage croustillant & crème pâtissière</div>
+          </div>
+        </div>
+        <div class="card mini">
+          <img src="img/steak.JPG" alt="">
+          <div>
+            <strong data-key="preview2_title">Steak frites</strong>
+            <div style="font-size:13px;color:#666" data-key="preview2_desc">Bœuf grillé, beurre aux herbes</div>
+          </div>
+        </div>
+        <div class="card mini">
+          <img src="img/salmon.JPEG" alt="">
+          <div>
+            <strong data-key="preview3_title">Saumon cassis & cerises</strong>
+            <div style="font-size:13px;color:#666" data-key="preview3_desc">Sauce cassis (grosella) & cerises de Céret</div>
+          </div>
+        </div>
+      </div>
+      <p style="margin-top:10px"><a href="menu.html" data-key="link_full_menu">Voir le menu complet</a></p>
+    </section>
+
+    <section aria-labelledby="visit">
+      <h2 id="visit">Visitez-nous</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Horaires</h3>
+          <p>Lun–Dim: 07:30 – 22:00</p>
+          <h4>Adresse</h4>
+          <p>Hôtel de Cameron, San Miguel, El Salvador</p>
+        </div>
+        <div class="card">
+          <h3>Réservations</h3>
+          <p>Pour réserver une table ou un dîner privé, contactez la réception de l'hôtel ou utilisez notre page de contact.</p>
+          <p><a href="contact.html" data-key="link_contact">Page de contact & réservations</a></p>
+        </div>
+        <div class="card">
+          <h3>Événements privés</h3>
+          <p>Nous organisons petits dîners, anniversaires et ateliers de pâtisserie sur demande.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div style="display:flex;justify-content:center;gap:12px;align-items:center;margin-bottom:8px">
+        <img src="img/logo.jpeg" alt="" style="width:48px;height:48px">
+        <div style="text-align:left">
+          <div style="font-weight:700;color:var(--bleu)">Petite Lumière</div>
+          <div style="font-size:13px;color:#666">Hôtel de Cameron — San Miguel</div>
+        </div>
+      </div>
+      <div style="text-align:center;color:#999">© <span id="year"></span> Petite Lumière — Tous droits réservés</div>
+    </div>
+  </footer>
+
+  <script>
+    // Traducciones simples (FR/ES) — sólo claves usadas en esta página
+    const t = {
+      fr:{ header_sub:"Cuisine & Pâtisserie Française — Hôtel de Cameron", tagLine:"Petite Lumière — un petit coin avec l'éclat de la France", hero_paragraph:"Restaurant et pâtisserie française intime, niché dans l'Hôtel de Cameron. Plats classiques, pâtisseries artisanales et service soigné.", btn_menu:"Découvrir le Menu", btn_jobs:"Postuler", about_title:"Notre histoire", about_lead:"Petite Lumière a été créée pour offrir un coin de France à San Miguel. Notre approche allie techniques classiques françaises et produits locaux de qualité.", mission_label:"Mission", mission_text:"Offrir des plats et desserts français authentiques, préparés avec passion et respect des produits locaux.", preview_title:"Aperçu du Menu", preview1_title:"Mille-feuille", preview1_desc:"Feuilletage croustillant & crème pâtissière", preview2_title:"Steak frites", preview2_desc:"Bœuf grillé, beurre aux herbes", preview3_title:"Saumon cassis & cerises", preview3_desc:"Sauce cassis (grosella) & cerises de Céret", link_full_menu:"Voir le menu complet", link_contact:"Page de contact & réservations"},
+      es:{ header_sub:"Cocina & Pastelería Francesa — Hotel de Cameron", tagLine:"Petite Lumière — un pequeño rincón con el brillo de Francia", hero_paragraph:"Restaurante y pastelería francesa íntima, ubicada en el Hotel de Cameron. Platos clásicos, repostería artesanal y servicio atento.", btn_menu:"Ver el Menú", btn_jobs:"Postular", about_title:"Nuestra historia", about_lead:"Petite Lumière nació con la idea de traer un rincón de Francia a San Miguel. Combinamos técnicas clásicas y productos locales.", mission_label:"Misión", mission_text:"Ofrecer platos y postres franceses auténticos, preparados con pasión y respeto por los productos locales.", preview_title:"Vista previa del Menú", preview1_title:"Milhojas (Mille-feuille)", preview1_desc:"Hojaldre crujiente & crema pastelera", preview2_title:"Steak frites", preview2_desc:"Carne a la parrilla, mantequilla de hierbas", preview3_title:"Salmón cassis y cerezas", preview3_desc:"Salsa de cassis (grosella) & cerezas de Céret", link_full_menu:"Ver el menú completo", link_contact:"Página de contacto y reservas"}
+    };
+    function applyLang(lang){
+      document.querySelectorAll('[data-key]').forEach(el=>{
+        const key = el.getAttribute('data-key');
+        if(t[lang] && t[lang][key]) el.innerHTML = t[lang][key];
+      });
+      localStorage.setItem('pl_lang', lang);
+      document.getElementById('lang').value = lang;
+    }
+    const saved = localStorage.getItem('pl_lang') || 'fr';
+    applyLang(saved);
+    document.getElementById('lang').addEventListener('change', e=>applyLang(e.target.value));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

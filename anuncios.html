@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-key="meta_title">Petite Lumière — Annonces & Offres d'emploi</title>
+  <meta name="description" content="Annonces d'emploi pour Petite Lumière (Hôtel de Cameron). Postulez aux postes de cuisine, pâtisserie et service.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bleu:#0B3D91;--bordeaux:#A1222B;--doré:#F4C542;--max:1100px;
+      --card-bg:#fff;--muted:#666;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Montserrat,Arial, Helvetica, sans-serif;margin:0;background:#fff;color:#222;line-height:1.45}
+    .container{max-width:var(--max);margin:0 auto;padding:16px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px;background:rgba(255,255,255,0.95);position:sticky;top:0;z-index:60}
+    .brand{display:flex;gap:10px;align-items:center}
+    .brand img{width:56px;height:56px;object-fit:contain}
+    nav ul{display:flex;gap:12px;align-items:center;list-style:none;margin:0;padding:0}
+    nav a{text-decoration:none;color:var(--bleu);font-weight:600}
+    h1{font-family:'Playfair Display',serif;color:var(--bleu);margin:8px 0}
+    .intro{background:linear-gradient(180deg,#fbfdff,#fff);padding:12px;border-radius:10px;box-shadow:0 8px 24px rgba(11,61,145,0.04)}
+    .grid{display:grid;grid-template-columns:2fr 380px;gap:18px;margin-top:14px}
+    .job-card{background:var(--card-bg);padding:14px;border-radius:12px;box-shadow:0 10px 30px rgba(11,61,145,0.05);margin-bottom:12px}
+    .job-meta{display:flex;gap:10px;align-items:center;margin-bottom:10px}
+    .job-meta img{width:80px;height:60px;object-fit:cover;border-radius:8px}
+    .badge{display:inline-block;background:var(--doré);padding:6px 8px;border-radius:999px;font-weight:700;color:#111;font-size:13px}
+    .list-inline{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+    .qualities{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;margin-top:10px}
+    .quality{background:#f8fbff;padding:10px;border-radius:8px;border:1px solid rgba(11,61,145,0.03)}
+    .side-card{background:var(--card-bg);padding:12px;border-radius:10px;box-shadow:0 10px 24px rgba(11,61,145,0.04)}
+    form input, form select, form textarea{width:100%;padding:10px;margin-bottom:8px;border-radius:8px;border:1px solid #e6e9ef}
+    .cta{display:inline-block;background:var(--bordeaux);color:#fff;padding:10px 12px;border-radius:8px;text-decoration:none;border:none;cursor:pointer}
+    .muted{color:var(--muted);font-size:14px}
+    footer{padding:16px;text-align:center;color:#777;margin-top:18px}
+    @media (max-width:980px){.grid{grid-template-columns:1fr}.job-meta img{display:none}}
+  </style>
+</head>
+<body>
+  <header class="container" role="banner">
+    <div class="brand">
+      <img src="images/logo.png" alt="Logo Petite Lumière">
+      <div>
+        <div style="font-weight:700;color:var(--bleu);font-family:'Playfair Display',serif">Petite Lumière</div>
+        <div style="font-size:13px;color:var(--muted)" data-key="header_sub">Bourse d'emploi — Hôtel de Cameron</div>
+      </div>
+    </div>
+
+    <nav aria-label="Navigation">
+      <ul>
+        <li><a href="index.html" data-key="nav_home">Accueil</a></li>
+        <li><a href="menu.html" data-key="nav_menu">Menu</a></li>
+        <li><a href="galerie.html" data-key="nav_gallery">Galerie</a></li>
+        <li><a href="emploi.html" data-key="nav_jobs">Emplois</a></li>
+        <li><a href="anuncios.html" data-key="nav_ann">Annonces</a></li>
+        <li><a href="contact.html" data-key="nav_contact">Contact</a></li>
+        <li><select id="langSelect" aria-label="Langue"><option value="fr">FR</option><option value="es">ES</option></select></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" id="main">
+    <h1 data-key="page_title">Annonces & Offres d'emploi</h1>
+
+    <div class="intro" role="region" aria-label="Introduction">
+      <p data-key="intro_text">
+        Espace d'annonces pour les postes ouverts à Petite Lumière (Hôtel de Cameron). Retrouvez ici des fiches complètes, exigences techniques, qualités recherchées et informations pratiques pour postuler.
+      </p>
+      <p class="muted" data-key="note_text">Conseil: lisez bien la fiche de poste — mentionnez toujours votre expérience pertinente et vos certificats (HACCP, food handling, diplômes de pâtisserie, etc.).</p>
+    </div>
+
+    <div class="grid" role="region">
+      <!-- LEFT: Anuncios list -->
+      <div>
+        <!-- ANUNCIO 1: Chef de cuisine -->
+        <article class="job-card" id="job-chef">
+          <div class="job-meta">
+            <img src="images/chef_1.jpg" alt="Chef en cuisine">
+            <div>
+              <div style="font-weight:700;font-size:18px" data-key="chef_title">Chef de Cuisine — Temps plein</div>
+              <div class="muted" data-key="chef_location">Local: Hôtel de Cameron (San Miguel)</div>
+              <div class="list-inline">
+                <span class="badge" data-key="badge_salary">Salaire: Négociable</span>
+                <span class="badge" data-key="badge_contract">Contrat: CDI possible</span>
+              </div>
+            </div>
+          </div>
+
+          <h4 data-key="chef_desc_title">Description du poste</h4>
+          <p data-key="chef_desc">Diriger la brigade, créer cartes saisonnières, contrôle qualité des plats et des fournisseurs. Manager 5–8 personnes en cuisine.</p>
+
+          <h4 data-key="chef_reqs_title">Exigences (requis)</h4>
+          <ul data-key="chef_reqs">
+            <li>Diplôme en gastronomie ou expérience équivalente (min. 3 ans en cuisine professionnelle).</li>
+            <li>Maîtrise des techniques de cuisine française (sauces, cuisson, réduction).</li>
+            <li>Connaissance en gestion des coûts et inventaires.</li>
+            <li>Certificat HACCP ou formation hygiène alimentaire.</li>
+            <li>Disponibilité pour horaires rotatifs, soirées et événements (banquets).</li>
+          </ul>
+
+          <h4 data-key="chef_extra_title">Exigences additionnelles (nous préférons)</h4>
+          <ul data-key="chef_extra">
+            <li>Anglais ou français courant (pour communications avec fournisseurs/touristes).</li>
+            <li>Expérience en gestion d'équipe et création de menus.</li>
+            <li>Capacité à formuler recettes standardisées et coût par portion.</li>
+          </ul>
+
+          <h4 data-key="chef_qualities_title">Qualités recherchées</h4>
+          <div class="qualities">
+            <div class="quality" data-key="q_leadership">Leadership et pédagogie</div>
+            <div class="quality" data-key="q_precision">Précision et souci du détail</div>
+            <div class="quality" data-key="q_composure">Sang-froid en service</div>
+            <div class="quality" data-key="q_teamwork">Esprit d'équipe</div>
+          </div>
+
+          <p style="margin-top:10px" class="muted" data-key="chef_howto">Comment postuler: envoyer CV, lettre et exemples de menus à <strong>emplois@petitelumiere.sv</strong> ou postuler via le formulaire à droite.</p>
+        </article>
+
+        <!-- ANUNCIO 2: Pâtissier -->
+        <article class="job-card" id="job-patisserie">
+          <div class="job-meta">
+            <img src="images/mille_feuille.jpg" alt="Mille-feuille">
+            <div>
+              <div style="font-weight:700;font-size:18px" data-key="patis_title">Pâtissier / Pâtissière — Temps plein</div>
+              <div class="muted" data-key="patis_location">Local: Laboratoire de Petite Lumière (Hôtel de Cameron)</div>
+              <div class="list-inline">
+                <span class="badge" data-key="badge_salary2">Salaire: Selon expérience</span>
+                <span class="badge" data-key="badge_contract2">Contrat: CDD/CDI</span>
+              </div>
+            </div>
+          </div>
+
+          <h4 data-key="patis_desc_title">Description</h4>
+          <p data-key="patis_desc">Responsable des viennoiseries, macarons, entremets et desserts à la carte. Préparation de pâtisseries pour room service et évènements.</p>
+
+          <h4 data-key="patis_reqs_title">Exigences (requis)</h4>
+          <ul data-key="patis_reqs">
+            <li>Formation en pâtisserie (CAP/BEP ou équivalent) ou 2+ ans d'expérience.</li>
+            <li>Maîtrise du feuilletage, choux, crèmes et glaçages.</li>
+            <li>Savoir travailler en équipe et respecter planning de production.</li>
+            <li>Connaissances d'hygiène (HACCP) et gestion des stocks de laboratoire.</li>
+          </ul>
+
+          <h4 data-key="patis_extra_title">Atouts appréciés</h4>
+          <ul data-key="patis_extra">
+            <li>Expérience avec macarons et pâtisserie fine.</li>
+            <li>Capacité à adapter recettes pour allergies (sans gluten, sans lactose).</li>
+            <li>Créativité pour desserts signatures saisonniers.</li>
+          </ul>
+
+          <h4 data-key="patis_qualities">Qualités recherchées</h4>
+          <div class="qualities">
+            <div class="quality" data-key="q_precision2">Maniement précis et sens esthétique</div>
+            <div class="quality" data-key="q_clean">Organisation et propreté</div>
+            <div class="quality" data-key="q_creativity">Créativité pâtissière</div>
+          </div>
+
+          <p class="muted" data-key="patis_howto">Pour postuler: CV + photos de créations à emplois@petitelumiere.sv</p>
+        </article>
+
+        <!-- ANUNCIO 3: Mesero / Servicio -->
+        <article class="job-card" id="job-service">
+          <div class="job-meta">
+            <img src="images/table_ambiance.jpg" alt="Servicio en sala">
+            <div>
+              <div style="font-weight:700;font-size:18px" data-key="waiter_title">Serveur / Serveuse — Mi tiempo / Tiempo completo</div>
+              <div class="muted" data-key="waiter_location">Local: Salle de Petite Lumière</div>
+              <div class="list-inline">
+                <span class="badge" data-key="badge_salary3">Salaire: Variable + propinas</span>
+                <span class="badge" data-key="badge_contract3">Contrat: Temporaire / Permanente</span>
+              </div>
+            </div>
+          </div>
+
+          <h4 data-key="waiter_desc_title">Role</h4>
+          <p data-key="waiter_desc">Accueil des clients, prise de commandes, service à la française, recommandations de vins et desserts, tenue de la salle.</p>
+
+          <h4 data-key="waiter_reqs_title">Requisitos</h4>
+          <ul data-key="waiter_reqs">
+            <li>Expérience en salle (1+ an recommandé).</li>
+            <li>Présence soignée et bon relationnel.</li>
+            <li>Français niveau intermédiaire souhaitable pour clientèle francophone.</li>
+            <li>Connaissances de base en vins (service et accords) — un plus.</li>
+          </ul>
+
+          <h4 data-key="waiter_qualities">Qualités</h4>
+          <div class="qualities">
+            <div class="quality" data-key="q_service">Orientation client</div>
+            <div class="quality" data-key="q_communication">Communication claire</div>
+            <div class="quality" data-key="q_speed">Dynamisme et resistencia</div>
+          </div>
+
+          <p class="muted" data-key="waiter_howto">Postula: CV + breve nota indicando disponibilidad a emplois@petitelumiere.sv o mediante formulario lateral.</p>
+        </article>
+
+        <!-- MORE: Section de annonces anteriores / historial -->
+        <section style="margin-top:12px">
+          <h3 data-key="past_title">Annonces récentes & Historique</h3>
+          <p class="muted" data-key="past_text">Ici nous listons annonces passées (stages, temporales) — utile si vous suivez notre page pour nouvelles opportunités.</p>
+        </section>
+      </div>
+
+      <!-- RIGHT: Sidebar util / formulario -->
+      <aside class="side-card" aria-labelledby="side_title">
+        <h3 id="side_title" data-key="side_title">Poster votre candidature</h3>
+        <p class="muted" data-key="side_lead">Formulaire simple pour postuler directement à une annonce (simulation).</p>
+
+        <form id="applyForm">
+          <label for="app_name" data-key="label_name">Nom complet</label>
+          <input id="app_name" type="text" placeholder="Nom complet" required>
+
+          <label for="app_email" data-key="label_email">E-mail</label>
+          <input id="app_email" type="email" placeholder="email@example.com" required>
+
+          <label for="app_poste" data-key="label_poste">Poste intéressé</label>
+          <select id="app_poste">
+            <option>Chef de Cuisine</option>
+            <option>Pâtissier / Pâtissière</option>
+            <option>Serveur / Serveuse</option>
+            <option>Plongeur / Aide-cuisine</option>
+            <option>Stage — pâtisserie</option>
+          </select>
+
+          <label for="app_experience" data-key="label_experience">Années d'expérience</label>
+          <input id="app_experience" type="text" placeholder="Ex: 2">
+
+          <label for="app_cv" data-key="label_cv">CV (PDF)</label>
+          <input id="app_cv" type="file" accept=".pdf,.doc,.docx" required>
+
+          <label for="app_note" data-key="label_note">Courte lettre (2–3 lignes)</label>
+          <textarea id="app_note" rows="3" placeholder=""></textarea>
+
+          <button type="submit" class="cta" data-key="btn_apply">Envoyer candidature</button>
+        </form>
+
+        <hr style="margin:12px 0">
+
+        <h4 data-key="post_job_title">Pour publier une annonce (RH)</h4>
+        <p class="muted" data-key="post_job_text">Formulaire simulé pour tester l'affichage d'une annonce (sans publication réelle).</p>
+
+        <form id="postJobForm">
+          <label for="company_name" data-key="label_company">Nom du recruteur / entreprise</label>
+          <input id="company_name" type="text" placeholder="Hôtel de Cameron">
+
+          <label for="job_title" data-key="label_jobtitle">Titre du poste</label>
+          <input id="job_title" type="text" placeholder="Chef Pâtissier">
+
+          <label for="job_desc" data-key="label_jobdesc">Bref descriptif</label>
+          <textarea id="job_desc" rows="3" placeholder=""></textarea>
+
+          <button type="button" id="previewBtn" class="cta" style="background:var(--bleu);margin-top:6px" data-key="btn_preview">Prévisualiser annonce</button>
+        </form>
+
+        <p class="muted" style="margin-top:12px" data-key="note_final">Note: Ces formulaires n'envoient pas de données — pour une plateforme en production un backend et modération seraient nécessaires.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="container" role="contentinfo">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div><strong>Petite Lumière</strong> — Hôtel de Cameron, San Miguel</div>
+      <div style="font-size:13px;color:#777">© <span id="year"></span> Petite Lumière</div>
+    </div>
+  </footer>
+
+  <!-- Scripts: traducción FR/ES, formularios simulados y preview -->
+  <script>
+    // Traducciones (fr / es)
+    const T = {
+      fr: {
+        meta_title: "Petite Lumière — Annonces & Offres d'emploi",
+        header_sub: "Bourse d'emploi — Hôtel de Cameron",
+        nav_home: "Accueil", nav_menu: "Menu", nav_gallery: "Galerie", nav_jobs: "Emplois", nav_ann: "Annonces", nav_contact: "Contact",
+        page_title: "Annonces & Offres d'emploi",
+        intro_text: "Espace d'annonces pour les postes ouverts à Petite Lumière (Hôtel de Cameron). Retrouvez ici des fiches complètes, exigences techniques, qualités recherchées et informations pratiques pour postuler.",
+        note_text: "Conseil: lisez bien la fiche de poste — mentionnez toujours votre expérience pertinente et vos certificats (HACCP, food handling, diplômes de pâtisserie, etc.).",
+        // Chef
+        chef_title: "Chef de Cuisine — Temps plein", chef_location: "Local: Hôtel de Cameron (San Miguel)",
+        badge_salary: "Salaire: Négociable", badge_contract: "Contrat: CDI possible",
+        chef_desc_title: "Description du poste", chef_desc: "Diriger la brigade, créer cartes saisonnières, contrôle qualité des plats et des fournisseurs. Manager 5–8 personnes en cuisine.",
+        chef_reqs_title: "Exigences (requis)",
+        chef_reqs: "",
+        chef_extra_title: "Exigences additionnelles (nous préférons)",
+        chef_extra: "",
+        chef_qualities_title: "Qualités recherchées",
+        q_leadership: "Leadership et pédagogie", q_precision: "Précision et souci du détail",
+        q_composure: "Sang-froid en service", q_teamwork: "Esprit d'équipe",
+        chef_howto: "Comment postuler: envoyer CV, lettre et exemples de menus à emplois@petitelumiere.sv ou postuler via le formulaire à droite.",
+        // Pâtissier
+        patis_title: "Pâtissier / Pâtissière — Temps plein", patis_location: "Local: Laboratoire de Petite Lumière (Hôtel de Cameron)",
+        patis_desc_title: "Description", patis_desc: "Responsable des viennoiseries, macarons, entremets et desserts à la carte. Préparation de pâtisseries pour room service et évènements.",
+        patis_reqs_title: "Exigences (requis)",
+        patis_reqs: "", patis_extra_title: "Atouts appréciés", patis_extra: "", patis_qualities: "",
+        patis_howto: "Pour postuler: CV + photos de créations à emplois@petitelumiere.sv",
+        // Waiter
+        waiter_title: "Serveur / Serveuse — Mi tiempo / Tiempo completo", waiter_location: "Local: Salle de Petite Lumière",
+        waiter_desc_title: "Role", waiter_desc: "Accueil des clients, prise de commandes, service à la française, recommandations de vins et desserts, tenue de la salle.",
+        waiter_reqs_title: "Requisitos", waiter_reqs: "", waiter_qualities: "",
+        waiter_howto: "Postula: CV + breve nota indicando disponibilidad a emplois@petitelumiere.sv o mediante formulario lateral.",
+        // Sidebar
+        side_title: "Poster votre candidature", side_lead: "Formulaire simple pour postuler directement à une annonce (simulation).",
+        label_name: "Nom complet", label_email: "E-mail", label_poste: "Poste intéressé", label_experience: "Années d'expérience",
+        label_cv: "CV (PDF)", label_note: "Courte lettre (2–3 lignes)", btn_apply: "Envoyer candidature",
+        post_job_title: "Pour publier une annonce (RH)", post_job_text: "Formulaire simulé pour tester l'affichage d'une annonce (sans publication réelle).",
+        label_company: "Nom du recruteur / entreprise", label_jobtitle: "Titre du poste", label_jobdesc: "Bref descriptif", btn_preview: "Prévisualiser annonce",
+        note_final: "Note: Ces formulaires n'envoient pas de données — pour une plateforme en production un backend et modération seraient nécessaires.",
+        past_title: "Annonces récentes & Historique", past_text: "Ici nous listons annonces passées (stages, temporales) — utile si vous suivez notre page pour nouvelles opportunités."
+      },
+      es: {
+        meta_title: "Petite Lumière — Anuncios & Ofertas de empleo",
+        header_sub: "Bolsa de empleo — Hotel de Cameron",
+        nav_home: "Inicio", nav_menu: "Menú", nav_gallery: "Galería", nav_jobs: "Empleos", nav_ann: "Anuncios", nav_contact: "Contacto",
+        page_title: "Anuncios & Ofertas de empleo",
+        intro_text: "Espacio de anuncios para los puestos abiertos en Petite Lumière (Hotel de Cameron). Encuentra fichas completas, requisitos técnicos, cualidades buscadas e información práctica para postular.",
+        note_text: "Consejo: lee bien la ficha — menciona siempre tu experiencia y certificados (HACCP, manipulación de alimentos, diplomas de pastelería, etc.).",
+        // Chef
+        chef_title: "Chef de Cocina — Tiempo completo", chef_location: "Lugar: Hotel de Cameron (San Miguel)",
+        badge_salary: "Salario: Negociable", badge_contract: "Contrato: Posible indefinido",
+        chef_desc_title: "Descripción del puesto", chef_desc: "Dirigir la brigada, crear cartas de temporada, control de calidad de platos y proveedores. Gestionar 5–8 personas en cocina.",
+        chef_reqs_title: "Requisitos (obligatorios)",
+        chef_reqs: "",
+        chef_extra_title: "Requisitos adicionales (preferibles)",
+        chef_extra: "",
+        chef_qualities_title: "Cualidades buscadas",
+        q_leadership: "Liderazgo y capacidad de enseñar", q_precision: "Precisión y atención al detalle",
+        q_composure: "Calma en servicio", q_teamwork: "Trabajo en equipo",
+        chef_howto: "Cómo postular: enviar CV, carta y ejemplos de menús a empleos@petitelumiere.sv o postular vía el formulario a la derecha.",
+        // Pâtissier
+        patis_title: "Pastelero / Pastelera — Tiempo completo", patis_location: "Lugar: Laboratorio de Petite Lumière (Hotel de Cameron)",
+        patis_desc_title: "Descripción", patis_desc: "Responsable de viennoiseries, macarons, entremets y postres a la carta. Preparación para room service y eventos.",
+        patis_reqs_title: "Requisitos (obligatorios)",
+        patis_reqs: "", patis_extra_title: "Ventajas valoradas", patis_extra: "", patis_qualities: "",
+        patis_howto: "Para postular: CV + fotos de tus creaciones a empleos@petitelumiere.sv",
+        // Waiter
+        waiter_title: "Mesero / Mesera — Medio tiempo / Tiempo completo", waiter_location: "Lugar: Sala de Petite Lumière",
+        waiter_desc_title: "Rol", waiter_desc: "Atender clientes, tomar comandas, servicio a la francesa, recomendar vinos y postres, mantener la sala.",
+        waiter_reqs_title: "Requisitos", waiter_reqs: "", waiter_qualities: "",
+        waiter_howto: "Postula: CV + nota breve indicando disponibilidad a empleos@petitelumiere.sv o mediante el formulario lateral.",
+        // Sidebar
+        side_title: "Enviar tu postulación", side_lead: "Formulario sencillo para postular directamente a un anuncio (simulación).",
+        label_name: "Nombre completo", label_email: "E-mail", label_poste: "Puesto interesado", label_experience: "Años de experiencia",
+        label_cv: "CV (PDF)", label_note: "Carta breve (2–3 líneas)", btn_apply: "Enviar postulación",
+        post_job_title: "Para publicar un anuncio (RRHH)", post_job_text: "Formulario simulado para probar la vista previa de un anuncio (sin publicación real).",
+        label_company: "Nombre del reclutador / empresa", label_jobtitle: "Título del puesto", label_jobdesc: "Breve descriptivo", btn_preview: "Previsualizar anuncio",
+        note_final: "Nota: Estos formularios no envían datos — para una plataforma real se necesita backend y moderación.",
+        past_title: "Anuncios recientes & Historial", past_text: "Aqui listamos anuncios pasados (prácticas, temporales) — útil si sigues nuestra página para nuevas oportunidades."
+      }
+    };
+
+    // Aplica traducciones en la página
+    function applyLocale(lang){
+      Object.keys(T[lang]).forEach(key => {
+        document.querySelectorAll('[data-key="'+key+'"]').forEach(el => { el.innerHTML = T[lang][key]; });
+      });
+      document.getElementById('langSelect').value = lang;
+      localStorage.setItem('site_lang', lang);
+      document.title = T[lang].meta_title || document.title;
+    }
+    const startLang = localStorage.getItem('site_lang') || 'fr';
+    applyLocale(startLang);
+    document.getElementById('langSelect').addEventListener('change', e => applyLocale(e.target.value));
+
+    // Formulario de aplicación (simulado)
+    document.getElementById('applyForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const lang = localStorage.getItem('site_lang') || 'fr';
+      const name = document.getElementById('app_name').value.trim();
+      const email = document.getElementById('app_email').value.trim();
+      const cv = document.getElementById('app_cv').files.length;
+      if(!name || !email || !cv){
+        alert((lang==='es')? 'Por favor complete los campos obligatorios y adjunte su CV.' : 'Veuillez compléter les champs obligatoires et joindre votre CV.');
+        return;
+      }
+      alert((lang==='es')? '¡Gracias! Tu postulación ha sido recibida (simulación).' : 'Merci! Votre candidature a été reçue (simulation).');
+      this.reset();
+    });
+
+    // Preview de anuncio (simulado): muestra un alert con resumen
+    document.getElementById('previewBtn').addEventListener('click', function(){
+      const comp = document.getElementById('company_name').value.trim() || '[Recruteur]';
+      const title = document.getElementById('job_title').value.trim() || '[Titre du poste]';
+      const desc = document.getElementById('job_desc').value.trim() || '[Description courte]';
+      const lang = localStorage.getItem('site_lang') || 'fr';
+      const msg = (lang==='es') ?
+        `Previsualización (simulación):\nEmpresa: ${comp}\nPuesto: ${title}\nDescripción: ${desc}` :
+        `Aperçu (simulation):\nEntreprise: ${comp}\nPoste: ${title}\nDescription: ${desc}`;
+      alert(msg);
+    });
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

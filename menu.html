@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title data-key="meta_title">Petite Lumière — Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bleu:#0B3D91;--borde:#A1222B;--doré:#F4C542;--max:1100px}
+    *{box-sizing:border-box}body{font-family:Montserrat,Arial;margin:0;color:#333;background:#fff}
+    header{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;background:rgba(255,255,255,0.95);position:sticky;top:0;z-index:40}
+    .brand{display:flex;gap:12px;align-items:center}.brand img{width:56px}
+    nav ul{display:flex;gap:12px;list-style:none;padding:0;margin:0;align-items:center}
+    .container{max-width:var(--max);margin:0 auto;padding:14px}
+    h1,h2{font-family:'Playfair Display',serif;color:var(--bleu)}
+    .menu-section{margin-top:14px}
+    .dish{display:flex;align-items:flex-start;gap:12px;padding:12px;border-bottom:1px dashed #eee}
+    .dish img{width:96px;height:72px;object-fit:cover;border-radius:8px}
+    .dish .info{flex:1}
+    .dish .price{font-weight:700;color:var(--borde)}
+    .note{font-size:13px;color:#666;margin-top:6px}
+    .allergens{font-size:12px;color:#9a1a2b}
+    @media (max-width:800px){.dish{flex-direction:column;align-items:stretch}.dish img{width:100%;height:160px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="img/logo.jpeg" alt="Logo Petite Lumière">
+      <div>
+        <div style="font-weight:700">Petite Lumière</div>
+        <div style="font-size:13px;color:#666" data-key="header_sub">Cuisine & Pâtisserie Française — Hôtel de Cameron</div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" data-key="nav_home">Accueil</a></li>
+        <li><a href="menu.html" data-key="nav_menu">Menu</a></li>
+        <li><a href="galerie.html" data-key="nav_gallery">Galerie</a></li>
+        <li><a href="emploi.html" data-key="nav_jobs">Emplois</a></li>
+        <li><a href="contact.html" data-key="nav_contact">Contact</a></li>
+        <li>
+          <select id="langSelect" aria-label="Langue">
+            <option value="fr">FR</option><option value="es">ES</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 data-key="menu_title">Le Menu Complet</h1>
+    <p class="note" data-key="menu_intro">La carte change selon saison. Les prix sont indicatifs. Indiquez vos allergies lors de la réservation.</p>
+
+    <!-- Entrées -->
+    <section class="menu-section" id="entrees">
+      <h2 data-key="entrees_title">Entrées / Entradas</h2>
+
+      <article class="dish">
+        <img src="img/onion.jpg" alt="Soupe à l'oignon">
+        <div class="info">
+          <h3 data-key="soup_name">Soupe à l'oignon gratinée</h3>
+          <div data-key="soup_desc">Oignons caramélisés au vin blanc, bouillon concentré, croûton gratiné au gruyère.</div>
+          <div class="note" data-key="soup_note">Suggestion: servi avec une touche de thym frais.</div>
+          <div class="allergens" data-key="soup_all">Allergènes: lait, gluten.</div>
+        </div>
+        <div class="price">₡5,50</div>
+      </article>
+
+      <article class="dish">
+        <img src="img/ensalada.jpg" alt="Salade Lyonnaise">
+        <div class="info">
+          <h3 data-key="lyon_name">Salade Lyonnaise</h3>
+          <div data-key="lyon_desc">Mâche et frisée, lard croustillant, œuf poché, vinaigrette moutarde à l'ancienne.</div>
+          <div class="allergens" data-key="lyon_all">Allergènes: œuf, moutarde.</div>
+        </div>
+        <div class="price">₡6,00</div>
+      </article>
+
+      <article class="dish">
+        <img src="img/egg.jpg" alt="Œuf mayonnaise">
+        <div class="info">
+          <h3 data-key="egg_name">Œuf mayonnaise</h3>
+          <div data-key="egg_desc">Œufs de ferme, mayonnaise maison, herbes fraîches.</div>
+          <div class="allergens" data-key="egg_all">Allergènes: œuf.</div>
+        </div>
+        <div class="price">₡4,80</div>
+      </article>
+    </section>
+
+    <!-- Plats -->
+    <section class="menu-section" id="plats">
+      <h2 data-key="mains_title">Plats principaux / Platos principales</h2>
+
+      <article class="dish">
+        <img src="img/meat.jpg" alt="Steak frites">
+        <div class="info">
+          <h3 data-key="steak_name">Steak frites</h3>
+          <div data-key="steak_desc">Entrecôte grillée, beurre maître d'hôtel, pommes frites croustillantes.</div>
+          <div class="note" data-key="steak_note">Cuisson à la carte (bleu, saignant, à point, bien cuit).</div>
+          <div class="allergens" data-key="steak_all">Allergènes: lait (beurre).</div>
+        </div>
+        <div class="price">₡14,00</div>
+      </article>
+
+      <article class="dish">
+        <img src="img/vu.jpg" alt="Coq au vin">
+        <div class="info">
+          <h3 data-key="coq_name">Coq au vin</h3>
+          <div data-key="coq_desc">Poulet mijoté au vin rouge, lardons, champignons et fond de veau.</div>
+          <div class="allergens" data-key="coq_all">Allergènes: aucun allergène majeur (vérifier sauces).</div>
+        </div>
+        <div class="price">₡12,50</div>
+      </article>
+
+      <!-- Plato especial con cassis y cerises -->
+      <article class="dish">
+        <img src="img/fish.jpg" alt="Saumon au cassis et cerises">
+        <div class="info">
+          <h3 data-key="special_name">Saumon rôti — sauce cassis & cerises de Céret</h3>
+          <div data-key="special_desc">Saumon croustillant, réduction de cassis (grosella noire) et compote de cerises de Céret, purée fine au beurre.</div>
+          <div class="note" data-key="special_note">Le cassis apporte une acidité fruitée — recommandé avec un vin blanc sec ou un rosé léger.</div>
+          <div class="allergens" data-key="special_all">Allergènes: poisson, lait (purée). Contient fruits (cerises).</div>
+        </div>
+        <div class="price">₡16,00</div>
+      </article>
+    </section>
+
+    <!-- Pâtisserie -->
+    <section class="menu-section" id="patisserie">
+      <h2 data-key="pastry_title">Pâtisserie & Desserts</h2>
+
+      <article class="dish">
+        <img src="img/cake.jpg" alt="Mille-feuille">
+        <div class="info">
+          <h3 data-key="mille_name">Mille-feuille</h3>
+          <div data-key="mille_desc">3 couches de feuilletage beurré, crème pâtissière à la vanille.</div>
+          <div class="allergens" data-key="mille_all">Allergènes: gluten, lait, œuf.</div>
+        </div>
+        <div class="price">₡5,00</div>
+      </article>
+
+      <article class="dish">
+        <img src="img/gelatina.jpg" alt="Panna cotta au cassis et cerises">
+        <div class="info">
+          <h3 data-key="panna_name">Panna cotta au cassis & compote de cerises de Céret</h3>
+          <div data-key="panna_desc">Panna cotta légère, gelée au cassis et compote de cerises, feuille de menthe.</div>
+          <div class="allergens" data-key="panna_all">Allergènes: lait. Contient fruits.</div>
+        </div>
+        <div class="price">₡6,00</div>
+      </article>
+
+      <article class="dish">
+        <img src="img/mac.jpg" alt="Macarons assortis">
+        <div class="info">
+          <h3 data-key="macaron_name">Macarons assortis</h3>
+          <div data-key="macaron_desc">Sélection quotidienne: vanille, framboise, pistache.</div>
+          <div class="allergens" data-key="macaron_all">Allergènes: fruits à coque, œuf.</div>
+        </div>
+        <div class="price">₡3,80</div>
+      </article>
+    </section>
+
+    <section style="margin-top:18px">
+      <p class="note" data-key="menu_footer_note">Pour les régimes spéciaux (végétarien, sans gluten), veuillez prévenir à l'avance. Les produits locaux sont utilisés selon saison.</p>
+    </section>
+  </main>
+
+  <footer style="padding:12px;text-align:center;color:#666">
+    <div>© <span id="year"></span> Petite Lumière — Hôtel de Cameron</div>
+  </footer>
+
+  <script>
+    // Traducciones para menu (fr / es)
+    const translationsMenu = {
+      fr:{
+        meta_title:"Petite Lumière — Menu",
+        header_sub:"Cuisine & Pâtisserie Française — Hôtel de Cameron",
+        nav_home:"Accueil",nav_menu:"Menu",nav_gallery:"Galerie",nav_jobs:"Emplois",nav_contact:"Contact",
+        menu_title:"Le Menu Complet",menu_intro:"La carte change selon saison. Les prix sont indicatifs. Indiquez vos allergies lors de la réservation.",
+        entrees_title:"Entrées / Entradas",
+        soup_name:"Soupe à l'oignon gratinée",soup_desc:"Oignons caramélisés au vin blanc, bouillon concentré, croûton gratiné au gruyère.",soup_note:"Suggestion: servi avec une touche de thym frais.",soup_all:"Allergènes: lait, gluten.",
+        lyon_name:"Salade Lyonnaise",lyon_desc:"Mâche et frisée, lard croustillant, œuf poché, vinaigrette moutarde à l'ancienne.",lyon_all:"Allergènes: œuf, moutarde.",
+        egg_name:"Œuf mayonnaise",egg_desc:"Œufs de ferme, mayonnaise maison, herbes fraîches.",egg_all:"Allergènes: œuf.",
+        mains_title:"Plats principaux / Platos principales",
+        steak_name:"Steak frites",steak_desc:"Entrecôte grillée, beurre maître d'hôtel, pommes frites croustillantes.",steak_note:"Cuisson à la carte (bleu, saignant, à point, bien cuit).",steak_all:"Allergènes: lait (beurre).",
+        coq_name:"Coq au vin",coq_desc:"Poulet mijoté au vin rouge, lardons, champignons et fond de veau.",coq_all:"Allergènes: aucun allergène majeur (vérifier sauces).",
+        special_name:"Saumon rôti — sauce cassis & cerises de Céret",special_desc:"Saumon croustillant, réduction de cassis (grosella noire) et compote de cerises de Céret, purée fine au beurre.",special_note:"Le cassis apporte une acidité fruitée — recommandé avec un vin blanc sec ou un rosé léger.",special_all:"Allergènes: poisson, lait (purée). Contient fruits (cerises).",
+        pastry_title:"Pâtisserie & Desserts",
+        mille_name:"Mille-feuille",mille_desc:"3 couches de feuilletage beurré, crème pâtissière à la vanille.",mille_all:"Allergènes: gluten, lait, œuf.",
+        panna_name:"Panna cotta au cassis & compote de cerises de Céret",panna_desc:"Panna cotta légère, gelée au cassis et compote de cerises, feuille de menthe.",panna_all:"Allergènes: lait. Contient fruits.",
+        macaron_name:"Macarons assortis",macaron_desc:"Sélection quotidienne: vanille, framboise, pistache.",macaron_all:"Allergènes: fruits à coque, œuf.",
+        menu_footer_note:"Pour les régimes spéciaux (végétarien, sans gluten), veuillez prévenir à l'avance. Les produits locaux sont utilisés selon saison."
+      },
+      es:{
+        meta_title:"Petite Lumière — Menú",
+        header_sub:"Cocina & Pastelería Francesa — Hotel de Cameron",
+        nav_home:"Inicio",nav_menu:"Menú",nav_gallery:"Galería",nav_jobs:"Empleo",nav_contact:"Contacto",
+        menu_title:"El Menú Completo",menu_intro:"La carta cambia según la temporada. Los precios son indicativos. Indique sus alergias al reservar.",
+        entrees_title:"Entradas",
+        soup_name:"Sopa de cebolla gratinada",soup_desc:"Cebolla caramelizada con vino blanco, caldo concentrado, crujiente de pan gratinado con gruyère.",soup_note:"Sugerencia: servir con tomillo fresco.",soup_all:"Alérgenos: lácteos, gluten.",
+        lyon_name:"Ensalada a la Lyonnaise",lyon_desc:"Mâche y lechuga, tocino crujiente, huevo pochado, vinagreta de mostaza.",lyon_all:"Alérgenos: huevo, mostaza.",
+        egg_name:"Huevo mayonnaise",egg_desc:"Huevos de granja, mayonesa casera, hierbas frescas.",egg_all:"Alérgenos: huevo.",
+        mains_title:"Platos principales",
+        steak_name:"Steak frites (filete con papas)",steak_desc:"Entrecôte a la parrilla, mantequilla de hierbas, papas fritas caseras.",steak_note:"Cocción a elección (muy crudo, medio, bien cocido).",steak_all:"Alérgenos: lácteos (mantequilla).",
+        coq_name:"Coq au vin (pollo al vino)",coq_desc:"Pollo estofado en vino tinto, tocino, champiñones y fondo de ternera.",coq_all:"Alérgenos: consultar salsas.",
+        special_name:"Salmón asado — salsa de cassis y cerezas de Céret",special_desc:"Salmón crujiente, reducción de cassis (grosella negra) y compota de cerezas de Céret, puré fino con mantequilla.",special_note:"El cassis aporta acidez frutal — recomendado con vino blanco seco o rosado.",special_all:"Alérgenos: pescado, lácteos (puré). Contiene frutas (cerezas).",
+        pastry_title:"Pastelería & Postres",
+        mille_name:"Milhojas (Mille-feuille)",mille_desc:"3 capas de hojaldre con crema pastelera de vainilla.",mille_all:"Alérgenos: gluten, lácteos, huevo.",
+        panna_name:"Panna cotta con cassis y compota de cerezas de Céret",panna_desc:"Panna cotta ligera, gelée de cassis y compota de cerezas, hoja de menta.",panna_all:"Alérgenos: lácteos. Contiene frutas.",
+        macaron_name:"Macarons surtidos",macaron_desc:"Selección diaria: vainilla, frambuesa, pistacho.",macaron_all:"Alérgenos: frutos secos, huevo.",
+        menu_footer_note:"Para dietas especiales (vegetariano, sin gluten) informe con anticipación. Usamos productos locales según temporada."
+      }
+    };
+
+    function applyTranslations(obj){
+      const lang = localStorage.getItem('site_lang') || 'fr';
+      Object.keys(obj[lang]).forEach(k=>{
+        document.querySelectorAll('[data-key="'+k+'"]').forEach(el=>{
+          el.innerHTML = obj[lang][k];
+        });
+      });
+      document.getElementById('langSelect').value = lang;
+      document.getElementById('year').textContent = new Date().getFullYear();
+    }
+    applyTranslations(translationsMenu);
+    document.getElementById('langSelect').addEventListener('change', e=>{
+      localStorage.setItem('site_lang', e.target.value);
+      applyTranslations(translationsMenu);
+    });
+  </script>
+  <div style="display:none"><span id="year"></span></div>
+</body>
+</html>
